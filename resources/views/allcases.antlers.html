@@ -1,0 +1,79 @@
+{{ partial:partials/nav }}
+
+<div class="container is-widescreen">
+
+    <!-- hero -->
+    <div class="columns mt-6">
+        
+        <div class="column is-10">
+            <span class="tag is-primary is-light block">{{ hero_tag }}</span>
+            <h1 class=" block title is-size-1 is-size-4-touch">
+                {{ hero_headline }}
+            </h1>
+        </div>
+        
+    </div>
+    
+    <div class="columns">
+        
+        <div class="column is-6">
+            <div class="buttons are-medium">
+                
+                {{ main-data:social_media }}
+                <a href="{{ link }}" class="button is-light is-rounded">
+                    <span class="icon">
+                        <i class="mdi {{ material_icon }}"></i>
+                    </span>
+                </a>
+                {{ /main-data:social_media }}
+
+                <a href="#" class="button is-primary is-normal is-rounded is-hidden-desktop">Hire me</a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="columns mt-4">
+        <img src="{{ hero_bg }}" class="column is-12" alt="Background image" style="border-radius: 24px; height: 300px; background-size: cover; object-fit: cover; background-position: center;">
+    </div>
+    <!-- hero end -->
+    
+    <!-- last cases -->
+    <div class="columns mt-9 is-vcentered is-mobile">
+        <div class="column is-10">
+            <h2 class="title is-size-2 is-size-4-touch">
+                All cases
+            </h2>
+        </div>
+    </div>
+    <div class="columns is-multiline">
+        {{ collection:cases scope="case"}}
+        <div class="column is-6">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-16by9">
+                        <img src="{{ image }}" alt="Preview image">
+                    </figure>
+                </div>
+                <div class="card-fixed-button">
+                    <a href="{{ url }}" class="button is-white is-large is-rounded">
+                        <span class="icon">
+                            <i class="mdi mdi-open-in-new"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="card-fixed-tags">
+                    <div class="tags">
+                        {{ hero_tags }}
+                        <span class="tag is-primary is-light">{{ content }}</span>
+                        {{ /hero_tags }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ /collection:cases }}
+    </div>
+    <!-- last cases end -->
+    
+</div>
+
+{{ partial:partials/footer }}

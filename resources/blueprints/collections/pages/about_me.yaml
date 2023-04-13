@@ -1,0 +1,405 @@
+title: 'About me'
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: template
+        field:
+          hide_partials: true
+          blueprint: false
+          display: Template
+          type: template
+          icon: template
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true
+  hero:
+    display: Hero
+    fields:
+      -
+        handle: hero_headline
+        field:
+          input_type: text
+          antlers: false
+          display: 'Hero headline'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: hero_tag
+        field:
+          input_type: text
+          antlers: false
+          display: 'Hero tag'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  summary:
+    display: Summary
+    fields:
+      -
+        handle: summary_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Summary title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: summary_content
+        field:
+          antlers: false
+          display: 'Summary content'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  work_exp:
+    display: 'Work exp'
+    fields:
+      -
+        handle: work_exp_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Work exp title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: work_exp_list
+        field:
+          collapse: false
+          previews: true
+          sets:
+            work:
+              display: Work
+              fields:
+                -
+                  handle: present
+                  field:
+                    default: false
+                    display: Present
+                    type: toggle
+                    icon: toggle
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: start_work
+                  field:
+                    mode: single
+                    time_enabled: false
+                    time_seconds_enabled: false
+                    full_width: false
+                    inline: false
+                    columns: 1
+                    rows: 1
+                    display: 'Start work'
+                    type: date
+                    icon: date
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    if:
+                      present: 'equals true'
+                -
+                  handle: period
+                  field:
+                    mode: range
+                    time_enabled: false
+                    time_seconds_enabled: false
+                    full_width: false
+                    inline: false
+                    columns: 1
+                    rows: 1
+                    display: Period
+                    type: date
+                    icon: date
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    unless:
+                      present: 'equals true'
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Title
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: tasks
+                  field:
+                    display: Tasks
+                    type: list
+                    icon: list
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: proud_with
+                  field:
+                    antlers: false
+                    display: 'Proud with'
+                    type: textarea
+                    icon: textarea
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+          display: 'Work exp list'
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  mission:
+    display: Mission
+    fields:
+      -
+        handle: mission_bg
+        field:
+          mode: list
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: 'Mission bg'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          container: assets
+          max_files: 1
+      -
+        handle: mission_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Mission title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: mission_content
+        field:
+          antlers: false
+          display: 'Mission content'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  education:
+    display: Education
+    fields:
+      -
+        handle: education_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Education title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: education_list
+        field:
+          collapse: false
+          previews: true
+          sets:
+            education:
+              display: Education
+              fields:
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Title
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: position
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Position
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: department
+                  field:
+                    input_type: text
+                    antlers: false
+                    default: 'Department of:'
+                    display: Department
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: department_value
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: 'Department value'
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: degree_in
+                  field:
+                    input_type: text
+                    antlers: false
+                    default: 'Degree in:'
+                    display: 'Degree in'
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: degree_value
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: 'Degree value'
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+          display: 'Education list'
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  skills:
+    display: Skills
+    fields:
+      -
+        handle: skills_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Skills title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: skills_list
+        field:
+          collapse: false
+          previews: true
+          sets:
+            skill:
+              display: Skill
+              fields:
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Title
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: progress
+                  field:
+                    input_type: number
+                    antlers: false
+                    display: Progress
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: content
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Content
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+          display: 'Skills list'
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  heading:
+    display: Heading
+    fields:
+      -
+        handle: heading_content
+        field:
+          antlers: false
+          display: 'Heading content'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible

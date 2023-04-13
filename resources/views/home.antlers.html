@@ -1,0 +1,147 @@
+{{ partial:partials/nav }}
+
+<div class="container is-widescreen">
+
+    <!-- hero -->
+    <div class="columns mt-6">
+        
+        <div class="column is-10">
+            <span class="tag is-primary is-light block">{{ hero_tag }}</span>
+            <h1 class=" block title is-size-1 is-size-4-touch">
+                {{ hero_headline }}
+            </h1>
+        </div>
+        
+        <div class="column is-2 is-flex-desktop is-justify-content-flex-end is-align-items-flex-end">
+            <figure class="image is-96x96">
+                <img src="{{ main-data:my_photo }}" alt="My photo" class=" is-rounded">
+            </figure>
+        </div>
+        
+    </div>
+    
+    <div class="columns">
+        
+        <div class="column is-6">
+            
+            <div class="buttons are-medium">
+                
+                {{ main-data:social_media }}
+                <a href="{{ link }}" class="button is-light is-rounded">
+                    <span class="icon">
+                        <i class="mdi {{ material_icon }}"></i>
+                    </span>
+                </a>
+                {{ /main-data:social_media }}
+
+                <a href="#" class="button is-primary is-normal is-rounded is-hidden-desktop">Hire me</a>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="columns mt-4 is-hidden-touch">
+        <img src="{{ hero_image }}" class="column is-12" alt="Background image" style="border-radius: 24px; height: 300px; background-size: cover; object-fit: cover; background-position: center;">
+    </div>
+    <!-- hero end -->
+    
+    <!-- about me -->
+    <div class="columns mt-9">
+        
+        <div class="column is-10">
+            <p class="block is-size-6 has-text-grey">
+                {{ about_me_title }}
+            </p>
+            <h3 class="title block is-size-3 is-size-4-touch">
+                {{ about_me_content }}
+            </h3>
+        </div>
+        
+    </div>
+    <!-- about me end -->
+    
+    <!-- core values -->
+    <div class="columns mt-9">
+        <div class="column">
+            <p class="block is-size-6 has-text-grey">
+                {{ core_values_title }}
+            </p>
+        </div>
+    </div>
+    <div class="columns">
+        {{ core_values_list }}
+        <div class="column is-4">
+            <h4 class="block title is-size-3 is-size-4-touch">
+                {{ title }}
+            </h4>
+            <p class="block has-text-grey is-size-6">
+                {{ content }}
+            </p>
+        </div>
+        {{ /core_values_list }}
+    </div>
+    <!-- core values end -->
+    
+    <!-- last cases -->
+    <div class="columns mt-9 is-vcentered is-mobile">
+        <div class="column is-10">
+            <h2 class="title is-size-2 is-size-4-touch">
+                Last cases
+            </h2>
+        </div>
+        <div class="column is-2 is-flex is-justify-content-flex-end">
+            <a href="#" class="button is-rounded is-primary">See all</a>
+        </div>
+    </div>
+    <div class="columns is-multiline">
+        {{ collection:cases scope="case"}}
+        <div class="column is-6">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-16by9">
+                        <img src="{{ image }}" alt="Preview image">
+                    </figure>
+                </div>
+                <div class="card-fixed-button">
+                    <a href="{{ url }}" class="button is-white is-large is-rounded">
+                        <span class="icon">
+                            <i class="mdi mdi-open-in-new"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="card-fixed-tags">
+                    <div class="tags">
+                        {{ hero_tags }}
+                        <span class="tag is-primary is-light">{{ content }}</span>
+                        {{ /hero_tags }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ /collection:cases }}
+    </div>
+    <!-- last cases end -->
+    
+    <div class="columns mt-9">
+        
+        <div class="column is-4">
+            <h2 class="title is-size-2 is-size-4-touch">
+                {{ work_steps_title }}
+            </h2>
+        </div>
+        <div class="column is-7 is-offset-1">
+            {{ work_steps_list }}
+            <div class="block steps-list">
+                <h3 class="block title is-size-4 is-size-5-touch">{{ title }}</h3>
+                <p class="block is-size-6 has-text-grey">{{ content }}</p>
+            </div>
+            {{ /work_steps_list }}
+        </div>
+        
+    </div>
+    
+</div>
+
+{{ partial:partials/footer }}

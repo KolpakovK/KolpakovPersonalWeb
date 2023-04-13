@@ -1,0 +1,47 @@
+<div class="container is-widescreen">
+    <!-- menu fixed -->
+    <nav class="navbar is-fixed-bottom has-background-light is-hidden-touch" style="transition-duration: 300ms;">
+        <div class="buttons">
+            {{ nav include_home="true" }}
+            <a href="{{ url }}" class="button is-white is-rounded">{{ title }}</a>
+            {{ /nav }}
+            <a href="#" class="button is-primary is-rounded">Hire me</a>
+        </div>
+    </nav>
+    <!-- menu fixed end -->
+    
+    <!-- menu -->
+    <div class="columns pt-4 is-vcentered is-mobile">
+        
+        <!-- logo -->
+        <div class="column is-2">
+            <a href="{{ site:url }}">
+                <figure class="image is-48x48">
+                    <img src="{{ main-data:logo }}" alt="Logo">
+                </figure>
+            </a>
+        </div>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+
+        <div id="navMenu" class="column is-5 is-offset-2 is-flex is-justify-content-flex-end is-hidden-touch">
+            <div class="buttons">
+                {{ nav include_home="true" }}
+                <a href="{{ url }}" class="button is-white is-rounded">{{ title }}</a>
+                {{ /nav }}
+            </div>
+        </div>
+        
+        <div class="column is-3 is-flex is-justify-content-flex-end is-hidden-touch">
+            <div class="buttons">
+                <a href="#" class="button is-primary is-rounded">Hire me</a>
+            </div>
+        </div>
+        
+    </div>
+    <!-- menu end -->
+</div>

@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "NT Somic";
+    src: url("font/NTSomic-Regular.woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NT Somic";
+    src: url("font/NTSomic-Medium.woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NT Somic";
+    src: url("font/NTSomic-Bold.woff2");
+    font-weight: 800;
+    font-style: normal;
+}
+
+body, html{
+    margin: 0;
+}
+
+.card{
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.card-fixed-button{
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+}
+
+.card-fixed-tags{
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    width: 90%;
+}
+
+.navbar.is-fixed-bottom{
+    border-radius: 50px; 
+    width: fit-content; 
+    padding: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -120px;
+}
+
+div > .steps-list:not(:last-child){
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+}
+
+@media screen and (max-width:800px) {
+    .container{
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    .navbar-burger{
+        position: fixed;
+        right: 16px;
+        top: 8px;
+        z-index: 5;
+    }
+
+    #navMenu{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: 16px;
+        background: white;
+        z-index: 4;
+        margin: 0;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    #navMenu .buttons{
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+}

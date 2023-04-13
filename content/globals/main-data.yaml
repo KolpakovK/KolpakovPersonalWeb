@@ -1,0 +1,19 @@
+title: main-data
+data:
+  logo: logo.svg
+  my_photo: unknown.jpeg
+  logo_extended: logo-extended.png
+  social_media:
+    -
+      id: lgea4duf
+      material_icon: mdi-linkedin
+      link: '#'
+      type: social
+      enabled: true
+    -
+      id: lgea7gh0
+      material_icon: mdi-email
+      link: '#'
+      type: social
+      enabled: true
+  photo_enviroment: my_photo.jpeg
