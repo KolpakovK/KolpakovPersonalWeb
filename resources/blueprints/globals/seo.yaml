@@ -20,10 +20,9 @@ sections:
       -
         handle: header_codes
         field:
-          antlers: false
           display: 'Header codes'
-          type: textarea
-          icon: textarea
+          type: html
+          icon: html
           listable: hidden
           instructions_position: above
           visibility: visible
