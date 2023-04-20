@@ -2,3 +2,7 @@ name: Kyrylo
 super: true
 id: 9d96ca70-8419-4adb-838d-10fcff2e15da
 password_hash: $2y$10$qp/4YylzYFZr2wxkiWTxleH2eRlllmo.SE9glZLMXZ1uctJk08kn6
+preferences:
+  collections:
+    pages:
+      after_save: continue_editing
