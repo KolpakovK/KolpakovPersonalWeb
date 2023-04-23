@@ -6,7 +6,7 @@ template: services
 layout: layout
 hero_headline: 'Services I propose for you'
 hero_tag: '#Services'
-hero_bg: bg-image.jpg
+hero_bg: pat-hayden-u6lgnp9cbl8-unsplash-min.jpg
 services_content: |-
   As a freelance UX/UI designer, **my services are focused on creating user-centered and visually appealing digital products for my clients**. I work collaboratively with my clients to understand their unique needs and goals, and use my expertise to design solutions that exceed their expectations.
 
@@ -16,7 +16,7 @@ services_content: |-
 
   My services cover a wide range of UX/UI design needs, including website design, mobile app design, user interface design, user experience design, and more. Whether my clients need a complete redesign or just a few tweaks to an existing design, I am here to help bring their digital product to life.
 updated_by: 9d96ca70-8419-4adb-838d-10fcff2e15da
-updated_at: 1682005637
+updated_at: 1682137585
 services_tabs:
   -
     id: lgp68ytn
@@ -66,7 +66,7 @@ services_list:
     type: service
     enabled: true
     description: "A landing page is an essential tool for businesses to drive traffic and convert visitors into customers. As a designer, my goal is to create a visually engaging and intuitive design that communicates the brand's value proposition, generates leads, and promotes conversions."
-    image_banner: bg-image.jpg
+    image_banner: landing-min.jpg
   -
     id: lgp6bl2r
     title: 'Corporative web-site'
@@ -85,7 +85,7 @@ services_list:
     type: service
     enabled: true
     description: "A corporate website is a powerful tool for businesses to showcase their products and services, communicate their brand message, and connect with their audience. As a designer, my aim is to create a website that aligns with the client's brand identity, meets their business goals, and delivers a seamless user experience."
-    image_banner: bg-image.jpg
+    image_banner: corporative-min.jpg
   -
     id: lgp6c0tg
     title: E-commerce
@@ -103,7 +103,7 @@ services_list:
         enabled: true
     type: service
     enabled: true
-    image_banner: bg-image.jpg
+    image_banner: commerce-min.jpg
     description: "Creating a successful e-commerce website requires a user-centered design that is visually appealing, intuitive, and encourages users to make purchases. My design process for e-commerce websites is focused on achieving these goals while ensuring that the website aligns with the client's branding and business objectives."
   -
     id: lgp6c91p
@@ -128,7 +128,7 @@ services_list:
         enabled: true
     type: service
     enabled: true
-    image_banner: bg-image.jpg
+    image_banner: statamic-min.jpg
     description: |-
       As a web designer, I offer services for creating simple information websites using Statamic, a flat-file content management system that allows for easy content updates without the need for a database.
       <br>
