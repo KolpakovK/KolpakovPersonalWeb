@@ -5,11 +5,11 @@ title: Home
 template: home
 author: 9d96ca70-8419-4adb-838d-10fcff2e15da
 updated_by: 9d96ca70-8419-4adb-838d-10fcff2e15da
-updated_at: 1681980611
+updated_at: 1682137548
 hero_bg: bg-image.jpg
 hero_headline: 'Experienced Designer with a Focus on Product Development'
 hero_tag: '#Help your bussines'
-hero_image: bg-image.jpg
+hero_image: pat-hayden-wmk7uej_qp8-unsplash-min.jpg
 about_me_title: 'A bit about me'
 about_me_content: "I'm Kyrylo, an UX/UI Designer with 3 years of commercial experience. My areas of expertise include user research, wireframing, prototyping, and visual design. I'm skilled at creating user-centered designs that are both aesthetically pleasing and functional. In my previous roles, I have worked on several successful projects that have improved the user experience and increased user engagement. I have also received positive feedback from clients and users for my design work."
 core_values_title: 'Core values'
