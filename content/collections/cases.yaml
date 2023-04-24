@@ -1,8 +1,10 @@
 title: Cases
 template: casestudie
 layout: layout
+mount: 44472399-65c3-4a08-8cef-f6017586e9ba
 revisions: false
-route: '{parent_uri}/{slug}'
+route: '{mount}/{slug}'
+date: true
 sort_dir: asc
 date_behavior:
   past: public
@@ -11,6 +13,3 @@ preview_targets:
   -
     label: Entry
     url: '{permalink}'
-structure:
-  root: false
-  slugs: true

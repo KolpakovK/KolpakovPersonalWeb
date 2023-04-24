@@ -3,6 +3,8 @@ data:
   logo: logo.svg
   my_photo: unknown.jpeg
   logo_extended: logo-extended.png
+  photo_enviroment: my_photo-2-1.jpg
+  abstract_vertical: dream_tradingcard-(8).jpg
   social_media:
     -
       id: lgea4duf
@@ -16,4 +18,4 @@ data:
       link: '#'
       type: social
       enabled: true
-  photo_enviroment: my_photo-2-1.jpg
+  hire_link: /hire

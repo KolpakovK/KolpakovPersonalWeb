@@ -56,6 +56,16 @@ div > .steps-list:not(:last-child){
     padding-bottom: 1em;
 }
 
+.timeline{
+    position: relative;
+}
+
+.timeline-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 @media screen and (max-width:800px) {
     .container{
         padding-left: 16px !important;

@@ -16,7 +16,7 @@ services_content: |-
 
   My services cover a wide range of UX/UI design needs, including website design, mobile app design, user interface design, user experience design, and more. Whether my clients need a complete redesign or just a few tweaks to an existing design, I am here to help bring their digital product to life.
 updated_by: 9d96ca70-8419-4adb-838d-10fcff2e15da
-updated_at: 1682137585
+updated_at: 1682288081
 services_tabs:
   -
     id: lgp68ytn
@@ -66,7 +66,7 @@ services_list:
     type: service
     enabled: true
     description: "A landing page is an essential tool for businesses to drive traffic and convert visitors into customers. As a designer, my goal is to create a visually engaging and intuitive design that communicates the brand's value proposition, generates leads, and promotes conversions."
-    image_banner: landing-min.jpg
+    image_banner: landing.jpg
   -
     id: lgp6bl2r
     title: 'Corporative web-site'
@@ -85,7 +85,7 @@ services_list:
     type: service
     enabled: true
     description: "A corporate website is a powerful tool for businesses to showcase their products and services, communicate their brand message, and connect with their audience. As a designer, my aim is to create a website that aligns with the client's brand identity, meets their business goals, and delivers a seamless user experience."
-    image_banner: corporative-min.jpg
+    image_banner: corporative.jpg
   -
     id: lgp6c0tg
     title: E-commerce
@@ -103,7 +103,7 @@ services_list:
         enabled: true
     type: service
     enabled: true
-    image_banner: commerce-min.jpg
+    image_banner: commerce.jpg
     description: "Creating a successful e-commerce website requires a user-centered design that is visually appealing, intuitive, and encourages users to make purchases. My design process for e-commerce websites is focused on achieving these goals while ensuring that the website aligns with the client's branding and business objectives."
   -
     id: lgp6c91p
@@ -128,7 +128,7 @@ services_list:
         enabled: true
     type: service
     enabled: true
-    image_banner: statamic-min.jpg
+    image_banner: statamic.jpg
     description: |-
       As a web designer, I offer services for creating simple information websites using Statamic, a flat-file content management system that allows for easy content updates without the need for a database.
       <br>
@@ -142,29 +142,31 @@ price_cards:
     id: lgp986nd
     title: Lite
     subtitle: 'Super quick design'
-    price: $100
+    price: $150
     price_additional_info: '/but can be vary'
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quasi incidunt neque alias, laborum tempora vitae sed laudantium, minima similique tenetur illo quo repellendus velit!'
+    description: 'The Lite Plan is perfect for small projects or for clients on a tight budget. It includes a basic design for up to 3 pages with mobile and desktop optimization, and Figma source files. This plan offers a few revisions, and the designing time is within 3-7 days.'
     price_options:
-      - 'Option 1'
-      - 'Option 2'
-      - 'Option 3'
-      - 'Option 4'
+      - 'Up to 5 pages design'
+      - '2 revisions'
+      - 'Mobile and desktop optimization'
+      - 'Figma source files'
     is_primary: false
     type: price
     enabled: true
   -
     id: lgpapatd
     title: Standart
-    subtitle: 'Super quick design'
-    price: $200
+    subtitle: 'Quick and tasty ;)'
+    price: $300
     price_additional_info: '/but can be vary'
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quasi incidunt neque alias, laborum tempora vitae sed laudantium, minima similique tenetur illo quo repellendus velit!'
+    description: 'The Standard Plan is suitable for medium-sized projects. It includes a more detailed design with responsive design, an interactive prototype, and Figma source files. This plan also offers 3 revisions, mobile and desktop optimization, and a Statamic live version (at an extra fee).'
     price_options:
-      - 'Option 1'
-      - 'Option 2'
-      - 'Option 3'
-      - 'Option 4'
+      - 'Up to 10 pages design'
+      - '2 revisions'
+      - 'Mobile and desktop optimization'
+      - 'Figma source files'
+      - 'Interactive prototype'
+      - 'Figma UI-Kit'
     is_primary: true
     type: price
     enabled: true
@@ -174,12 +176,12 @@ price_cards:
     subtitle: 'Super quick design'
     price: $10
     price_additional_info: /hour
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quasi incidunt neque alias, laborum tempora vitae sed laudantium, minima similique tenetur illo quo repellendus velit!'
+    description: 'The Hourly Rate plan is perfect for clients who have ongoing projects, or for those who prefer to pay for design services by the hour. The hourly rate is $10 per hour, and the I will track all the hours spent on the project, providing detailed invoices for each project.'
     price_options:
-      - 'Option 1'
-      - 'Option 2'
-      - 'Option 3'
-      - 'Option 4'
+      - 'Flexibility to work on different projects'
+      - 'Detailed tracking of work hours'
+      - 'Client communication and collaboration'
+      - 'Figma source files provided'
     is_primary: false
     type: price
     enabled: true
