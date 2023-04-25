@@ -99,4 +99,18 @@ div > .steps-list:not(:last-child){
         align-items: center !important;
         justify-content: center !important;
     }
+
+    .timeline{
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .timeline a{
+        font-size: 0.7rem !important;
+    }
+
+    .timeline > .columns{
+        gap: 4px;
+        width: 100%;
+    }
 }
