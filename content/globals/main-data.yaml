@@ -9,13 +9,13 @@ data:
     -
       id: lgea4duf
       material_icon: mdi-linkedin
-      link: '#'
+      link: 'https://www.linkedin.com/in/kyrylo-kolpakov-b6a06b207/'
       type: social
       enabled: true
     -
       id: lgea7gh0
       material_icon: mdi-email
-      link: '#'
+      link: 'mailto:kolpakov.k99@gmail.com'
       type: social
       enabled: true
   hire_link: /hire
